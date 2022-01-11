@@ -4,8 +4,6 @@ module.exports = {
     entry: {
         main: './src/main.js',
     },
-    // outputDir: path.resolve(__dirname, './dist'),
-    // assetsDir: 'assets',
     resolve: {
         alias: {
             '@': path.join(__dirname, '..', 'src/'), // 상위 경로의 위치라서 중간에 '..' 을 추가한다.
