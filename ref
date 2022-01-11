@@ -1,0 +1,25 @@
+ devServer: {
+        port: 6031,
+        proxy: {
+            '^/': {
+                target: 'https://localhost:6030',
+                secure: false,
+                ws: true,
+                changeOrigin: true
+            }
+        },
+        https: true
+    },
+    outputDir: '../bdo-was/resources/static',
+    pages: {
+        index: {
+            entry: 'src/main.js',
+            template: 'public/index.html',
+            title: process.env.VUE_APP_TITLE
+        },
+        login: {
+            entry: 'src/login.js',
+            template: 'public/login.html',
+            title: process.env.VUE_APP_TITLE
+        },
+    },
