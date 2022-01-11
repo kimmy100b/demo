@@ -7,7 +7,7 @@ Vue.use(VueI18n);
 const messages = Object.assign(languages);
 
 const i18n = new VueI18n({
-    locale: 'en',
+    locale: 'ko',
     messages
 });
 
